@@ -25,11 +25,33 @@ header {
     text-align: center;
 }
 
+.hero {
+    position: relative;
+    background-image: url("head.png"); /* имя твоей панорамы */
+    background-size: cover;
+    background-position: center;
+    padding: 140px 20px;
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.65);
+    padding: 80px 20px;
+}
+
 .hero-logo {
-    width: 420px;
+    width: 380px;
     max-width: 90%;
     margin-bottom: 40px;
 }
+
+.hero h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
 
 .hero-subtitle {
     font-size: 20px;
@@ -166,23 +188,21 @@ footer {
 
 <body>
 
-<header>
-    <div class="hero">
+<header class="hero">
+    <div class="overlay">
         <img src="logo.png" alt="Mercor Group logo" class="hero-logo">
 
-        <p class="hero-subtitle">
-            ИЗЫСКАНИЯ, ПРОЕКТИРОВАНИЕ И СТРОИТЕЛЬСТВО
-        </p>
-
-        <p class="hero-location">
+        <h2>
+            ИЗЫСКАНИЯ, ПРОЕКТИРОВАНИЕ И СТРОИТЕЛЬСТВО<br>
             АВТОМОБИЛЬНЫХ ДОРОГ И МОСТОВ
-        </p>
+        </h2>
 
         <button onclick="document.getElementById('contactForm').scrollIntoView({behavior:'smooth'})">
             Связаться с нами
         </button>
     </div>
 </header>
+
 
 
 
