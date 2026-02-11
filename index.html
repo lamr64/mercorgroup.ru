@@ -20,11 +20,28 @@ body {
 }
 
 header {
-    background: url('hero.jpg') center/cover no-repeat;
-    position: relative;
-    padding: 160px 0;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    padding: 120px 20px;
     text-align: center;
 }
+
+.hero-logo {
+    width: 420px;
+    max-width: 90%;
+    margin-bottom: 40px;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.hero-location {
+    margin-bottom: 30px;
+    opacity: 0.7;
+}
+
 
 header::before {
     content: "";
@@ -150,33 +167,23 @@ footer {
 <body>
 
 <header>
-   <div class="logo-wrapper">
-    <img src="logo.png" alt="Mercor Group logo">
-</div>
-    <svg width="90" height="90" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <rect width="100" height="100" rx="15" fill="#1e293b"/>
-        <path d="M20 75 L20 30 L35 55 L50 30 L65 55 L80 30 L80 75"
-              stroke="#f59e0b"
-              stroke-width="6"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"/>
-        <line x1="48" y1="35" x2="52" y2="45"
-              stroke="white"
-              stroke-width="3"
-              stroke-dasharray="4 4"/>
-    </svg>
-</div>
+    <div class="hero">
+        <img src="logo.png" alt="Mercor Group logo" class="hero-logo">
 
-        <h1>Mercor Group</h1>
-        <p>Проектирование, авторский надзор и строительство автомобильных дорог</p>
-        <p>Энгельс · Работаем по всей Российской Федерации</p>
-        <br>
+        <p class="hero-subtitle">
+            ИЗЫСКАНИЯ, ПРОЕКТИРОВАНИЕ И СТРОИТЕЛЬСТВО
+        </p>
+
+        <p class="hero-location">
+            АВТОМОБИЛЬНЫХ ДОРОГ И МОСТОВ
+        </p>
+
         <button onclick="document.getElementById('contactForm').scrollIntoView({behavior:'smooth'})">
             Связаться с нами
         </button>
     </div>
 </header>
+
 
 
 <section class="section container">
